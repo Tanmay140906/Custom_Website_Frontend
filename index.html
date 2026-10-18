@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#140a13">
+<title>For Shona</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-inner">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1 class="hero-name" id="heroName"></h1>
+    <p class="hero-sub" id="heroSub"></p>
+    <a class="cue" href="#letter">
+      <span id="cueText"></span>
+      <span class="chev" aria-hidden="true"></span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <section class="letter" id="letter">
+    <h2 class="sec-title reveal" id="letterTitle"></h2>
+    <div class="letter-grid" id="letterGrid"></div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2 class="sec-title reveal" id="galleryTitle"></h2>
+    <p class="sec-note reveal" id="galleryNote"></p>
+    <div class="carousel">
+      <button class="nav prev" id="prevBtn" aria-label="Previous photo"></button>
+      <div class="track" id="track"></div>
+      <button class="nav next" id="nextBtn" aria-label="Next photo"></button>
+    </div>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+  </section>
+
+  <section class="cupcake" id="cupcake">
+    <div class="sprinkles" id="sprinkles" aria-hidden="true"></div>
+    <div class="cupcake-grid">
+      <div class="frame reveal" id="cupcakeFrame"></div>
+      <div class="cupcake-text">
+        <p class="day-chip reveal" id="dayChip"></p>
+        <h2 class="reveal" id="cupcakeTitle"></h2>
+        <div class="reveal" id="cupcakeBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="end">
+    <div class="end-heart" aria-hidden="true">&#10084;</div>
+    <p class="sign" id="sign"></p>
+  </footer>
+
+</main>
+
+<dialog id="lightbox" class="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <img id="lbImg" alt="">
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
